@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a **Admin Dashboard** project built with **React**, **Tailwind CSS**, and **Chart.js**. It is designed to manage and track shipments, displaying details like the shipment status, geolocation, and charts for temperature and humidity when the shipment is in progress.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Company List**: Displays a list of companies, with the ability to navigate to a shipment list for each company.
+- **Shipment List**: Displays shipments associated with a company, with details such as reference, status, departure, and destination.
+- **Shipment Details**: Provides detailed information about a shipment, including temperature and humidity charts when the shipment is "In Progress", and a message when the status is "Draft".
+- **Navigation**: Intuitive navigation between components like Company List, Shipment List, and Shipment Details.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Chart.js**: A popular charting library for visualizing data, used here for temperature and humidity data.
+- **React Router**: For managing routing and navigation between different views.
+- **Jest** and **React Testing Library**: For writing and running unit and integration tests.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup and Installation
 
-### `npm test`
+### 1. Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repository to your local machine:
 
-### `npm run build`
+```bash
+git clone https://github.com/yourusername/shipment-dashboard.git
+cd shipment-dashboard```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Install Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run the following command to install the project dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install```
 
-### `npm run eject`
+### 3. Start the Development Server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run the application locally, use the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start```
+This will start the development server, and you can access the application in your browser at http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. Run Tests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run the test suite, use the following command:
 
-## Learn More
+```bash
+npm test```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Key Features to Highlight
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Responsive Design**: The dashboard is designed to be responsive, ensuring a good user experience on both mobile and desktop devices.
+- **Tailwind CSS**: A utility-first CSS framework is used to rapidly build custom designs.
+- **Chart.js**: Visual representation of shipment data using interactive charts for temperature and humidity.
+- **Routing**: The project uses React Router to navigate between different views, including Company List, Shipment List, and Shipment Details.
+- **Error Handling**: Proper error handling for missing shipment data, including appropriate fallback messages.
+- **Unit Testing**: The project includes tests for the components using Jest and React Testing Library to ensure proper functionality.
 
-### Analyzing the Bundle Size
+## Known Issues
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Data Handling**: Some shipment data, like geolocation, might not always be available.
+- **Chart Data**: In some cases, chart data might not render properly if the data points are missing or null.
 
-### Making a Progressive Web App
+## Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **User Authentication**: Implement user login and authentication to provide role-based access to the dashboard.
+- **Pagination**: Add pagination to the shipment lists for better performance when dealing with a large number of entries.
+- **Data Fetching**: Instead of using hardcoded data, implement API calls to fetch real shipment data.
