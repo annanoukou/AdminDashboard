@@ -25,14 +25,16 @@ Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/shipment-dashboard.git
-cd shipment-dashboard```
+cd shipment-dashboard
+```
 
 ### 2. Install Dependencies
 
 Run the following command to install the project dependencies:
 
 ```bash
-npm install```
+npm install
+```
 
 ### 3. Start the Development Server
 
