@@ -41,7 +41,8 @@ npm install
 To run the application locally, use the following command:
 
 ```bash
-npm start```
+npm start
+```
 This will start the development server, and you can access the application in your browser at http://localhost:3000.
 
 ### 4. Run Tests
@@ -49,7 +50,8 @@ This will start the development server, and you can access the application in yo
 To run the test suite, use the following command:
 
 ```bash
-npm test```
+npm test
+```
 
 
 
